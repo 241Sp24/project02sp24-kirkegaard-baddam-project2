@@ -9,5 +9,32 @@ package studentdriver;
  * @author S539672
  */
 public class UGStudent {
+    private double scholarShip;
+    private int coursesEnrolled;
+    private boolean hasScholarship;
+    private double ADDITINAL_FEE = 820.70;
+
+    public UGStudent(String studentName, int studentID, boolean isEnrolled, boolean hasScholarship, double scholarshipAmount, int coursesEnrolled){
+        this.scholarShip = scholarShip;
+        this.coursesEnrolled = coursesEnrolled;
+        this.hasScholarship = hasScholarship;
     
+    }
+    public boolean isHasScholarship(){
+        return hasScholarship;
+    }
+    public double getScholarshipAmount(){
+        return scholarShip;
+    }
+    public int getCoursesEnrolled(){
+        return coursesEnrolled;
+    }
+    public double getPayableAmount(){
+        return PayableAmount;
+    }
+    public String toString(){
+        
+    }
 }
+
+
