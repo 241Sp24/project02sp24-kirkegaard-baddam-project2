@@ -20,6 +20,8 @@ public class OnlineStudent extends StudentFeesAbstract {
         return PayableAmount;
     }
     public String toString(){
+        System.out.println("Student Name: "+studentName+"Student ID: "+studentID+"Enrolled: "+isEnrolled+"Number Of Months: "+noofMonths+"Payable Amount: " );
+    
         
     }
             

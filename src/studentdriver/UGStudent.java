@@ -34,7 +34,7 @@ public class UGStudent extends StudentFeesAbstract {
         return PayableAmount;
     }
     public String toString(){
-        
+        System.out.println("Student Name: "+studentName+ "\nStudent ID: "+studentID+ "\nEnrolled: "+isEnrolled+ "\nScholarship: "+hasScholarship+ "\nScholarship amount: "+ scholarShip+"\nCourses Enrolled: "+coursesEnrolled+ "\nPayable Amount: ");
     }
 }
 

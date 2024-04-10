@@ -31,7 +31,7 @@ public class GraduateStudent extends StudentFeesAbstract {
         return PayableAmount;
     }
     public String toString(){
-        
+        System.out.println("Student Name: "+ studentName+ "Student Id: "+studentID + "Enrolled: "+isEnrolled+ "Graduate Assistant: "+isGraduateAssistant+ "Graduate Assistant Type: "+graduateAssistantType+ "Courses Enrolled"+coursesEnrolled+ "Payable Amount: ");
     }
     
     
