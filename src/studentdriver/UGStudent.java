@@ -31,10 +31,10 @@ public class UGStudent extends StudentFeesAbstract {
         return coursesEnrolled;
     }
     public double getPayableAmount(){
-        return PayableAmount;
+        return ADDITINAL_FEE+ coursesEnrolled*3;
     }
     public String toString(){
-        System.out.println("Student Name: "+studentName+ "\nStudent ID: "+studentID+ "\nEnrolled: "+isEnrolled+ "\nScholarship: "+hasScholarship+ "\nScholarship amount: "+ scholarShip+"\nCourses Enrolled: "+coursesEnrolled+ "\nPayable Amount: ");
+        return "Courses Register: " + coursesEnrolled+ "\n ";
     }
 }
 

@@ -8,7 +8,7 @@ package studentdriver;
  *
  * @author S539672
  */
-public class StudentFeesAbstract {
+public abstract class StudentFeesAbstract {
     private String studentName;
     private int studentID;
     private boolean isEnrolled;
@@ -45,11 +45,10 @@ public class StudentFeesAbstract {
     public void setIsEnrolled(boolean isEnrolled){
         this.isEnrolled = isEnrolled;
     }
-    public double getPayableAmount(){
-        return PayableAmount;
-    }
+    public abstract double getPayableAmount();
+    
     public String toString(){
-        System.out.println("");
+        return "Student Name: "+this.studentName+ "\nStudent ID: "+this.studentID+"Enrolled: "+this.isEnrolled+"No of Months"
         
     }
 }
