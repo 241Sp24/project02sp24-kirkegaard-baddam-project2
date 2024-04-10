@@ -47,10 +47,9 @@ public abstract class StudentFeesAbstract {
     }
     public abstract double getPayableAmount();
     
+    @Override
     public String toString(){
-        return "Student Name: "+this.studentName+ "\nStudent ID: "+this.studentID+"Enrolled: "+this.isEnrolled+"No of Months"
-        
+        return "Student Name: " + this.studentName + "\nStudent ID: " + this.studentID + "\nEnrolled: " + this.isEnrolled ;     
     }
 }
     
-

@@ -17,12 +17,11 @@ public class OnlineStudent extends StudentFeesAbstract {
         this.noofMonths = noofMonths;
     }
     public double getPayableAmount(){
-        return PayableAmount;
+        return noofMonths * MONTHLY_FEE;
     }
+    @Override
     public String toString(){
-        System.out.println("Student Name: "+studentName+"Student ID: "+studentID+"Enrolled: "+isEnrolled+"Number Of Months: "+noofMonths+"Payable Amount: " );
-    
-        
+        return "\nNo of Monnths: " + noofMonths + "\nPayable Amount: " + getPayableAmount();   
     }
             
 }

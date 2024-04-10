@@ -28,10 +28,11 @@ public class GraduateStudent extends StudentFeesAbstract {
         return coursesEnrolled;
     }
     public double getPayableAmount(){
-        return PayableAmount;
+        return ((coursesEnrolled * getCREDITS_PER_COURSE()) * getPER_CREDIT_FEE());
     }
+    @Override
     public String toString(){
-        System.out.println("Student Name: "+ studentName+ "Student Id: "+studentID + "Enrolled: "+isEnrolled+ "Graduate Assistant: "+isGraduateAssistant+ "Graduate Assistant Type: "+graduateAssistantType+ "Courses Enrolled"+coursesEnrolled+ "Payable Amount: ");
+        return "Enrolled: " + coursesEnrolled + "\nGraduate Assistant: " + isGraduateAssistant + "Graduate Assistant Type: "+ graduateAssistantType + "Courses Enrolled" + coursesEnrolled + "Payable Amount: " + getPayableAmount();
     }
     
     

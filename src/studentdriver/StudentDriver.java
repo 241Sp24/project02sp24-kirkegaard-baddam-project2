@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package studentdriver;
-
+import java.util.*;
+import java.io.*;
 /**
  *
  * @author dianar
@@ -14,8 +15,13 @@ public class StudentDriver {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        System.out.println("Project02");
+    public static void main(String[] args) throws FileNotFoundException {
+        
+        Scanner input = new Scanner();
+            System.out.println("Enter no of UG Students");
+            
+        
+        
     }
 
 }

@@ -33,8 +33,9 @@ public class UGStudent extends StudentFeesAbstract {
     public double getPayableAmount(){
         return ADDITINAL_FEE+ coursesEnrolled*3;
     }
+    @Override
     public String toString(){
-        return "Courses Register: " + coursesEnrolled+ "\n ";
+        return "Courses Register: " + coursesEnrolled+ "\nScholarship: " + hasScholarship + "\nScholarShip Amount: " + scholarShip + "\nPayable amount: " + getPayableAmount();
     }
 }
 
