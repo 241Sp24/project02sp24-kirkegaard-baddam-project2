@@ -8,13 +8,14 @@ package studentdriver;
  *
  * @author S539672
  */
-public class UGStudent {
+public class UGStudent extends StudentFeesAbstract {
     private double scholarShip;
     private int coursesEnrolled;
     private boolean hasScholarship;
     private double ADDITINAL_FEE = 820.70;
 
     public UGStudent(String studentName, int studentID, boolean isEnrolled, boolean hasScholarship, double scholarshipAmount, int coursesEnrolled){
+        super(studentName, studentID, isEnrolled);
         this.scholarShip = scholarShip;
         this.coursesEnrolled = coursesEnrolled;
         this.hasScholarship = hasScholarship;
