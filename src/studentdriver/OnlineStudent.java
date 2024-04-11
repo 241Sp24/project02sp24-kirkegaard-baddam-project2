@@ -12,7 +12,7 @@ public class OnlineStudent extends StudentFeesAbstract {
     private int noofMonths;
     private double MONTHLY_FEE = 1245.25;
     
-    public OnlineStudent(String studentName, String studentID, boolean isEnrolled, int noofMonths){
+    public OnlineStudent(String studentName, int studentID, boolean isEnrolled, int noofMonths){
         super(studentName, studentID, isEnrolled);
         this.noofMonths = noofMonths;
     }
