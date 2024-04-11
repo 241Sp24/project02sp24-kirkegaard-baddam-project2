@@ -17,8 +17,13 @@ public class StudentDriver {
      */
     public static void main(String[] args) throws FileNotFoundException {
         
-        Scanner input = new Scanner();
-            System.out.println("Enter no of UG Students");
+        Scanner input = new Scanner(System.in);
+            System.out.println("Enter no of UG Students: ");
+            int UGStudent = input.nextInt();
+            System.out.println("Enter the no of Graduate students: ");
+            int GraduateStudent = input.nextInt();
+            System.out.println("Enter the no of online students: ");
+            int OnlineStudent = input.nextInt();
             
         
         
