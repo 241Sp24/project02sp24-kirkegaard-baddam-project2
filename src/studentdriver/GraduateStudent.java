@@ -28,7 +28,7 @@ public class GraduateStudent extends StudentFeesAbstract {
         return coursesEnrolled;
     }
     public double getPayableAmount(){
-        return ((coursesEnrolled * getCREDITS_PER_COURSE()) * getPER_CREDIT_FEE());
+        return ((coursesEnrolled * 3) * getPER_CREDIT_FEE());
     }
     @Override
     public String toString(){

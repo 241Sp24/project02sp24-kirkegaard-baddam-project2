@@ -15,9 +15,11 @@ public class StudentDriver {
             System.out.println("Enter the no of online students: ");
             int OnlineStudent = input.nextInt();
             
-        StudentFeesAbstract[] students = new File (input.csv);
-        Scanner input = new Scanner (inputFile);
-        int x = 0;
+        StudentFeesAbstract[] students = new StudentFeesAbstract[UGStudent + GraduateStudent + OnlineStudent];
+            int x = 0;
+         File inputFile = new File("input.csv");
+         Scanner fileScanner = new Scanner(inputFile);
+        
         
         while(input.hasNextLine()){
             String[] mystring = input.nextLine().split(",");
@@ -29,7 +31,7 @@ public class StudentDriver {
                 boolean hasScholarship = Boolean.parseBoolean(mystring[4]);
                 double getPayableAmount = Double.parseDouble(mystring[5]);
                 
-                students [x] = new UGStudent(studentName, studentID,isEnrolled,hasScholarship, getPayableAmount, coursesEnrolled);
+                students [x] = new UGStudent(studentName, studentID, isEnrolled, hasScholarship, getPayableAmount, coursesEnrolled);
                 x++;
             }
             else if (x < 9){
@@ -41,7 +43,7 @@ public class StudentDriver {
                     String graduateAssistantType = mystring[5];
                     int coursesEnrolled = Integer.parseInt(mystring[3]);
                     
-                    students [x] =new GraduateStudent(studentName, studentID,isEnrolled,isGraduateAssistant,graduateAssistantType,coursesEnrolled);
+                    students [x] =new GraduateStudent(studentName, studentID, isEnrolled, isGraduateAssistant, graduateAssistantType, coursesEnrolled);
                     x++;
                 }
                 else if (Boolean.parseBoolean(mystring[4])==false){
@@ -51,7 +53,7 @@ public class StudentDriver {
                     boolean isGraduateAssistant= Boolean.parseBoolean(mystring[4]);
                     int coursesEnrolled = Integer.parseInt(mystring[3]);
                     
-                    students [x] =new GraduateStudent(studentName, studentID,isEnrolled,isGraduateAssistant,coursesEnrolled);
+                    students [x] =new GraduateStudent(studentName, studentID, isEnrolled, isGraduateAssistant, coursesEnrolled);
                     x++;
                 }
                 else{
